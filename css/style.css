@@ -1,0 +1,222 @@
+/* Set universal element to no padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the bcackground color of webpage and define font-family */
+body {
+    background-color: rgba(116, 101, 101, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set common and repeated colors to reference in future */
+:root {
+    --light: rgb(221, 196, 196);
+    --dark: rgb(3, 3, 87);
+}
+
+/* Increased the font size and color of main header */
+h1 {
+    font-size: 300%;
+    color: var(--light);
+}
+
+/* Set the background of header */
+.header-background {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+}
+
+/*  Styled the nav bar */
+header nav ul li {
+    margin: 20px;
+    display: inline;
+    font-size: 120%;
+}
+
+/* Removed hyperlink set the color of links */
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+/* Styled h2 */
+header h2 {
+    text-align: center;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 250%;
+    margin-left: 100px;
+}
+
+/* Inserted image at subheader */
+.subheader-image {
+    background-image: url(../images/neom-t3dlLOhdEzs-unsplash);
+    background-size: cover;
+    background-position: center;    
+    height: 120px;
+}
+
+/* Justified content for accessiblity */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Create "About Me" Nav box */
+.navbox_aboutme {
+    width: 14vw;
+    height: 120px;
+    border-right: 5px solid var(--dark);
+    padding: 20px;
+    margin: 30px;
+    line-height: 1.5;
+    text-align: right;
+    font-size: 200%;
+}
+
+/* Create and style paragraph */
+.first-content {
+    line-height: 18px;
+    text-align: justify;
+    width: 1530px;
+    padding: 40px 30px 0 0;
+}
+
+/* Create "Work" Nav box */
+.navbox_work {
+    width: 10vw;
+    height: 89vh;
+    border-right: 5px solid var(--dark);
+    padding: 20px;
+    margin: 30px;
+    text-align: right;
+    font-size: 200%;
+}
+
+/* Define container characteristics for sub-boxes for each project title */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 83vw;
+    height: 92vh;
+    margin-top: 36px;
+}
+
+/* Set the width and height of bigger box for "Alpha Romeo Project Report" */
+.box2 {
+    width: 150px;
+    height: 70px;
+    background-color: var(--light);
+    padding-top: 10px;
+    margin-top: 200px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+/* Inserted image for "Alpha Romeo Project Report" */
+.box2-image {
+    background-image: url(../images/pexels-oleksandr-canary-islands-1008155.jpg);
+    background-size: cover;
+    background-position: center;    
+    height: 300px;
+    width: 78vw;
+    border: 10px solid var(--light);
+    margin-bottom: 20px;
+}
+
+/* Set the width and height of smaller boxes */
+.box3 {
+    width: 150px;
+    height: 70px;
+    background-color: var(--light);
+    padding-top: 10px;
+    margin-top: 50px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+/* Set the width and height of smaller images */
+.boxstyle {
+    background-size: cover;
+    background-position: center;    
+    height: 150px;
+    width: 46%;
+    border: 10px solid var(--light);
+}
+
+/* Inserted image for "Astin Martin Project Report" */
+.box3-image {
+    background-image: url(../images/pexels-david-mcbee-730547.jpg);
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/* Inserted image for "1987 Jaguar Project Report" */
+.box4-image {
+    background-image: url(../images/write-away-navy-blue-logo-white-border.png);
+}
+
+/* Inserted image for "The Hummer Project Report" */
+.box5-image {
+    background-image: url(../images/pexels-kaan-durmuş-9457133.jpg);
+    margin-right: 10px;
+}
+
+/* Inserted image for "Sports Cars Project Report" */
+.box6-image {
+    background-image: url(../images/pexels-albin-berlin-919073.jpg);
+}
+
+/* Create "Contact Me" Nav box */
+.navbox_contactme {
+    width: 12vw;
+    height: 80px;
+    border-right: 5px solid var(--dark);
+    padding: 20px;
+    margin: 0px;
+    line-height: 1.5;
+    text-align: right;
+    font-size: 200%;
+}
+
+/* Created general styling of Contact Me section */
+.list-format {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Created styling of Contact Me lists */
+.list-format li {
+    list-style-type: none;
+    margin: 0 20px;
+    font-size: 150%;
+    padding: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .cards {
+        width: 100%;
+    }
+    .header-background {
+        background-color: rgb(3, 43, 56);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        width: 100%;
+    }
+    .header-background {
+        background-color: rgb(56, 38, 5); 
+    }
+}
